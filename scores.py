@@ -13,7 +13,7 @@ args = argparser.parse_args()
 TOKEN = args.token
 
 headers = {
-    'Authorization': f'token {TOKEN}',
+    'Authorization': f'token {TOKEN}',#使用命令行参数中传入的taken
     'Accept': 'application/vnd.github.v3+json'
 }
 
