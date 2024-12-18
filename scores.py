@@ -48,6 +48,7 @@ while True:
         comments_response = requests.get(comments_url, headers=headers)
         comments = comments_response.json()
 
+            #统计评论者
         for comment in comments:
             commenter = comment['user']['login']
             comment_counts[commenter] = comment_counts.get(commenter, 0) + 1
